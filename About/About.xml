@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Skaven Upgraded! (Continued)</name>
+  <packageId>Mlie.SkavenUpgraded</packageId>
+  <author>Buffsboy474</author>
+  <url>https://github.com/emipa606/SkavenUpgraded</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>jecrell.jecstools</packageId>
+      <displayName>JecsTools</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2195729899</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>Kompadt.Warhammer.Skaven</packageId>
+      <displayName>Warhammer: Skaven</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1706345856</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>jecrell.jecstools</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Kompadt.Warhammer.Skaven</li>
+  </loadAfter>
+  <description>Update of Buffsboy474s mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
+
+[img]https://i.imgur.com/wtwHAQu.png[/img]
+
+Support-chat:
+https://invite.gg/mlie
+
+Non-steam version:
+https://github.com/emipa606/SkavenUpgraded
+	
+--- Original Description ---
+This is my first attempt with photoshopping existing Skaven items as well as texturing some of my own art.
+
+Let me know if you have issues using the mod which should be loaded after all of the required mods.
+
+Go and show some love to the Skaven mod creator too!
+https://steamcommunity.com/workshop/filedetails/?id=1706345856
+
+Some new Skaven weapons and an armor set for use! Yes yes!!
+
+Update 11/21/2019
+-Skaven now love living in barracks! BaseMood effect is highly increased when in their den (barracks room)!
+- Maniacal lifestyle! Prisoner, family, and fellow colonist death mood effects essentially removed! More warpstone for me me!
+- Texture bug fixes and coding clean up</description>
+</ModMetaData>

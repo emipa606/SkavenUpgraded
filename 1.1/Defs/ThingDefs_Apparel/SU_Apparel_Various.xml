@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBaseSkaven">
+    <defName>SU_Apparel_UnderlingArmor</defName>
+    <label>Underling Armor</label>
+    <description>The armor of the an underling vermin... weak!</description>
+    <graphicData>
+      <texPath>Things/Apparel/Armor/UnderlingArmor/UnderlingArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>1.5</Mass>
+      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Armor/UnderlingArmor/UnderlingArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SkavenClan</li>
+        <li>SkavenSeer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Skaven</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>SkavenCloth</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

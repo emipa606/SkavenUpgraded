@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>QuickFlameBall</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/QuickFlameBall</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.70111</min>
+          <max>77.30627</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.6976015</min>
+          <max>0.7769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>MagicLaunch</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/MagicLaunch</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.70111</min>
+          <max>77.30627</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.6976015</min>
+          <max>0.7769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>MagicSwoosh</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/MagicSwoosh</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60.70111</min>
+          <max>77.30627</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.6976015</min>
+          <max>0.7769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
