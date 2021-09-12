@@ -1,13 +1,13 @@
 # SkavenUpgraded
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Buffsboy474s mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
 
 - Replaced the overwrite of the vanilla pawns thoughts with Skaven specific, thanks Röstli!
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
 
 [table]
@@ -19,7 +19,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
 	[/tr]
 [/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 This is my first attempt with photoshopping existing Skaven items as well as texturing some of my own art.
@@ -37,7 +37,7 @@ Update 11/21/2019
 - Texture bug fixes and coding clean up
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

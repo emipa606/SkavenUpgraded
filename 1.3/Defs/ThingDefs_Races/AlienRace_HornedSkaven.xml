@@ -134,6 +134,7 @@
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <drawnInBed>true</drawnInBed>
+              <defaultOffset>Tail</defaultOffset>
               <offsets>
                 <south>
                   <bodyTypes>
@@ -171,6 +172,7 @@
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <drawnInBed>true</drawnInBed>
+              <defaultOffset>Tail</defaultOffset>
               <offsets>
                 <south>
                   <bodyTypes>

@@ -1,5 +1,8 @@
 # Changelog for SkavenUpgraded
 
+1.0.3.0 - Fixed floating horns issue
+
+
 1.0.2.0 - Updated for 1.3, removed JecsTools dependency.
 
 

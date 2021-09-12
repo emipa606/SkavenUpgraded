@@ -27,13 +27,13 @@
     <li>erdelf.HumanoidAlienRaces</li>
     <li>Kompadt.Warhammer.Skaven</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Buffsboy474s mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
 
 - Replaced the overwrite of the vanilla pawns thoughts with Skaven specific, thanks Röstli!
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -42,7 +42,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 This is my first attempt with photoshopping existing Skaven items as well as texturing some of my own art.
 
@@ -59,7 +59,7 @@ Update 11/21/2019
 - Texture bug fixes and coding clean up
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -70,4 +70,3 @@ Update 11/21/2019
 [/list]
 </description>
 </ModMetaData>
-
