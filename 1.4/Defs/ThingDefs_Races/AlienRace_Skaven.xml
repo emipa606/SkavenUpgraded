@@ -2,24 +2,24 @@
 <!-- ================ Daemonettes ========================== -->
 <Defs>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>Alien_SkavenStorm</defName>
-    <label>Vermin</label>
-    <description>A large skaven, born stronger than the rest. They are bigger and stonger than the normal clanrats that lives across the skaven holds. They are aggressive by nature and are given to overt displays of prowess in order to intimidate those around them.</description>
+    <defName>Alien_Skaven</defName>
+    <label>skaven</label>
+    <description>Skaven, ratmen or ratkins. They are a malevolent and diabolical race of large humanoid rat-creatures.</description>
     <alienRace>
       <generalSettings>
         <maleGenderProbability>0.9</maleGenderProbability>
         <!-- ================ Traits ========================== -->
         <forcedRaceTraitEntries>
           <li>
+            <defName>Nimble</defName>
+            <chance>10</chance>
+          </li>
+          <li>
             <defName>Jealous</defName>
             <chance>10</chance>
           </li>
           <li>
             <defName>Greedy</defName>
-            <chance>10</chance>
-          </li>
-          <li>
-            <defName>Abrasive</defName>
             <chance>10</chance>
           </li>
         </forcedRaceTraitEntries>
@@ -35,9 +35,6 @@
           </li>
           <li>
             <defName>Undergrounder</defName>
-          </li>
-          <li>
-            <defName>Brawler</defName>
           </li>
         </disallowedTraits>
         <factionRelations>
@@ -78,21 +75,26 @@
             </goodwill>
           </li>
         </factionRelations>
+        <notXenophobistTowards>
+          <li>Alien_SkavenMoulder</li>
+          <li>Alien_HornedSkaven</li>
+          <li>Alien_SkavenStorm</li>
+        </notXenophobistTowards>
         <humanRecipeImport>true</humanRecipeImport>
         <!-- ================ Part Generator ========================== -->
         <alienPartGenerator>
-          <customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
-          <aliencrowntypes>
-            <li>Average</li>
-            <li>Hairy</li>
-          </aliencrowntypes>
-          <customDrawSize>(1.1, 1.1)</customDrawSize>
-          <alienbodytypes>
+          <customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
+          <headOffset>(0.0, -0.05)</headOffset>
+          <headTypes Inherit="False">
+            <li>Skaven_Average</li>
+            <li>Skaven_Hairy</li>
+            <li>Skaven_Thin</li>
+          </headTypes>
+          <customDrawSize>(0.9, 0.9)</customDrawSize>
+          <bodyTypes Inherit="False">
             <li>Male</li>
-            <li>Female</li>
-          </alienbodytypes>
-          <useGenderedHeads>false</useGenderedHeads>
-          <useGenderedBodies>false</useGenderedBodies>
+            <li>Thin</li>
+          </bodyTypes>
           <bodyAddons>
             <li>
               <drawSize>1</drawSize>
@@ -106,29 +108,20 @@
                 <south>
                   <bodyTypes>
                     <Male>(0,0)</Male>
-                    <Female>(0,0)</Female>
+                    <Thin>(0,-0)</Thin>
                   </bodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                  </crownTypes>
                 </south>
                 <north>
                   <bodyTypes>
                     <Male>(0,0.5)</Male>
-                    <Female>(0,0.5)</Female>
+                    <Thin>(0,0.5)</Thin>
                   </bodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                  </crownTypes>
                 </north>
                 <east>
                   <bodyTypes>
                     <Male>(-0.3,0.25)</Male>
-                    <Female>(-0.2,0.25)</Female>
+                    <Thin>(-0.3,0.25)</Thin>
                   </bodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                  </crownTypes>
                 </east>
               </offsets>
             </li>
@@ -139,12 +132,24 @@
               <first Class="ColorGenerator_Options">
                 <options>
                   <li>
+                    <weight>1</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <li>
                     <weight>10</weight>
                     <only>RGBA(0.46,0.46,0.46,1)</only>
                   </li>
                   <li>
                     <weight>10</weight>
                     <only>RGBA(0.5,0.5,0.5,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.6,0.3,0.0,1)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.28,0.14,0.04,1)</only>
                   </li>
                 </options>
               </first>
@@ -182,25 +187,67 @@
           <li>Apparel_SkavenMoulderMask</li>
         </apparelList>
         <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+        <blackGeneList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+        </blackGeneList>
+        <blackGeneTags>
+          <!-- <li>SkinColor</li> -->
+          <!-- <li>HairColor</li> -->
+          <li>EyeColor</li>
+          <li>BodyType</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>Headbone</li>
+          <li>HairStyle</li>
+          <li>BeardStyle</li>
+          <li>SkinColorOverride</li>
+          <li>Fur</li>
+          <li>Tail</li>
+        </blackGeneTags>
+        <blackEndoCategories>
+          <!-- <li>Melanin</li> -->
+          <!-- <li>HairColor</li> -->
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Jaw</li>
+          <li>Head</li>
+          <li>BodyType</li>
+        </blackEndoCategories>
       </raceRestriction>
       <!-- ================ Graphic Path & Hair ========================== -->
       <graphicPaths>
-        <li>
-          <body>Things/Pawn/Skaven/Bodies/</body>
-          <head>Things/Skaven/Head/</head>
-        </li>
+        <body>Things/Pawn/Skaven/Bodies/</body>
+        <head>Things/Skaven/Head/</head>
+        <skinShader>Cutout</skinShader>
       </graphicPaths>
       <styleSettings>
         <li>
           <key>HairDef</key>
           <value>
             <hasStyle>false</hasStyle>
+            <styleTags>
+            </styleTags>
           </value>
         </li>
         <li>
           <key>BeardDef</key>
           <value>
-            <hasStyle>false</hasStyle>
+            <hasStyle>true</hasStyle>
+            <styleTags>
+              <li>NoBeard</li>
+            </styleTags>
+          </value>
+        </li>
+        <li>
+          <key>TattooDef</key>
+          <value>
+            <hasStyle>true</hasStyle>
+            <styleTags>
+              <li>NoTattoo</li>
+            </styleTags>
           </value>
         </li>
       </styleSettings>
@@ -208,12 +255,12 @@
       <thoughtSettings>
         <replacerList>
           <li>
-            <original>SleptInBarracks</original>
-            <replacer>SkavenSleptInBarracks</replacer>
-          </li>
-          <li>
             <original>PrisonBarracks</original>
             <replacer>SkavenPrisonBarracks</replacer>
+          </li>
+          <li>
+            <original>SleptInBarracks</original>
+            <replacer>SkavenSleptInBarracks</replacer>
           </li>
           <li>
             <original>KnowColonistDied</original>
@@ -433,6 +480,8 @@
           </li>
         </replacerList>
         <cannotReceiveThoughts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">AteFungus_Despised</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">AteFungusAsIngredient_Despised</li>
           <li>MyGrandchildLost</li>
           <li>MyNieceLost</li>
           <li>MyNephewLost</li>
@@ -496,6 +545,16 @@
           <li>ExecutedPrisoner</li>
           <li>KilledColonist</li>
           <li>KilledColonyAnimal</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Disapproved</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Disapproved</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Abhorrent</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Abhorrent</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
     </alienRace>
@@ -505,21 +564,21 @@
       <PainShockThreshold>1</PainShockThreshold>
       <ImmunityGainSpeed>1.3</ImmunityGainSpeed>
       <GlobalLearningFactor>0.8</GlobalLearningFactor>
-      <ToxicSensitivity>0.7</ToxicSensitivity>
-      <MarketValue>1570</MarketValue>
+      <ToxicResistance>0.3</ToxicResistance>
+      <MarketValue>1500</MarketValue>
       <MoveSpeed>4.9</MoveSpeed>
       <Flammability>1</Flammability>
       <ComfyTemperatureMin>-6</ComfyTemperatureMin>
       <ComfyTemperatureMax>28</ComfyTemperatureMax>
       <LeatherAmount>35</LeatherAmount>
-      <SmoothingSpeed>1</SmoothingSpeed>
+      <SmoothingSpeed>1.4</SmoothingSpeed>
       <ConstructionSpeed>1</ConstructionSpeed>
-      <ResearchSpeed>0.8</ResearchSpeed>
-      <MiningSpeed>1</MiningSpeed>
-      <SocialImpact>0.9</SocialImpact>
+      <ResearchSpeed>1</ResearchSpeed>
+      <MiningSpeed>1.4</MiningSpeed>
+      <SocialImpact>0.7</SocialImpact>
       <MeleeDodgeChance>1.2</MeleeDodgeChance>
-      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.07</ArmorRating_Sharp>
       <ArmorRating_Heat>0</ArmorRating_Heat>
     </statBases>
     <!-- ================ Tools ========================== -->
@@ -529,7 +588,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>8.2</power>
+        <power>6</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -546,7 +605,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>8.2</power>
+        <power>6</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -570,18 +629,18 @@
     </tools>
     <!-- ================ Race ========================== -->
     <race>
-      <useMeatFrom>Alien_Skaven</useMeatFrom>
+      <meatLabel>skaven meat</meatLabel>
       <baseHungerRate>1.1</baseHungerRate>
       <nameGenerator>NamerSkaven</nameGenerator>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>45</lifeExpectancy>
+      <lifeExpectancy>50</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
       <body>Skaven</body>
-      <baseBodySize>1</baseBodySize>
-      <baseHealthScale>1.1</baseHealthScale>
+      <baseBodySize>0.85</baseBodySize>
+      <baseHealthScale>0.9</baseHealthScale>
       <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <gestationPeriodDays>15</gestationPeriodDays>
@@ -605,15 +664,15 @@
           <soundAngry>Pawn_Boomrat_Angry</soundAngry>
         </li>
         <li>
-          <def>HumanlikeToddler</def>
+          <def>HumanlikeChild</def>
           <minAge>1.2</minAge>
           <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
           <soundDeath>Pawn_Boomrat_Death</soundDeath>
           <soundCall>Pawn_Boomrat_Call</soundCall>
           <soundAngry>Pawn_Boomrat_Angry</soundAngry>
         </li>
-        <li>
-          <def>HumanlikeChild</def>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
           <minAge>4</minAge>
           <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
           <soundDeath>Pawn_Boomrat_Death</soundDeath>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorSmithableBaseSkaven">
+    <defName>SU_Apparel_ChainHelmet</defName>
+    <label>Skaven Vanguard Helmet</label>
+    <description>A simple helmet made to fit a skaven.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Headgear/ChainHelmet/Vanguard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Headgear/ChainHelmet/Vanguard</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SkavenClanHigh</li>
+        <li>SkavenStormvermin</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Skaven</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>SkavenArmour</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

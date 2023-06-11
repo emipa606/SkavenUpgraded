@@ -9,15 +9,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1916406002
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/SkavenUpgraded]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -50,3 +41,5 @@ Update 11/21/2019
 
 
 
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2265309323]Last updated 2023-06-11
